@@ -8,23 +8,23 @@ const fs = require('fs');
 const debug = false;
 const debug_data = [];
 
-const course_urls = ['YOUR_COURSE_URLs_HERE', 'YOUR_COURSE_URLs_HERE'];
+const course_urls = ['https://www.domestika.org/en/courses/5274-developing-creative-advertising-campaigns-from-brief-to-pitch/course', 'https://www.domestika.org/en/courses/5274-developing-creative-advertising-campaigns-from-brief-to-pitch/course'];
 
 const subtitle_lang = 'en';
 //Specifiy your OS either as 'win' for Windows machines or 'mac' for MacOS/Linux machines
-const machine_os = 'YOUR_OS_HERE';
+const machine_os = 'mac';
 
 //Cookie used to retreive video information
 const cookies = [
     {
         name: '_domestika_session',
-        value: 'YOUR_COOKIE_HERE',
+        value: 'tU1T%2BpiJp6uXhUWHI5nkUPjHNRis8zZvrQAWXRGsD0Czi%2FztvoN9M0CCwxClfxHV62s21tffvqRbLz38Y38zLQ%2BHKXL75Vis7BE%2FVtCmE6YIuSdhU4RkNj%2BLR13MR3PWNRn6ZRo6DBfL2u9NuS%2F8t2ISX5qYU%2BLSYuLDCSgrPlO5hf60wyahdaab%2B4iF648pNJ2gE85a7opHmtGwZQRdEtHIt%2BGRy5ObTTyJ4qC47ycQQDYoLYnIztaigRDW1Dw%2BSoLfwF7R0Bz8zrff19AphWWsYqYlmeWfyDf3peeZtvjYybVxd%2FQa8COmh%2BIITvMszmY7WBfSwJYDGTA7CuiqZewEX5yYSPJjrVu8lLF%2FNQ0BY0dEFXwd4srQHwgw6XnNvQI4YNa8DGTVaDIrJlg%2F4VVo9pq6pe5uXqIXvOVEnXPljrTAGUp6v9AZ3P%2FEKI4zeeneVjFs091bzkoJEWiP97wXLoIweS9ks%2FbsyES%2FmowLjdMYwNCoFFLOkDDJv5b%2BDqngnupdNp0JRVZlJwy1u9H%2BYJguh%2F4n3Lwu6J6HmCk%2FRvkRu%2BYJmpzUnx6QCCyyZP3kKT78F9HE0OeFZpG5Ri%2F41PQlwpsbTZV9ifePT7otL1C9keT%2BtQnXvWX0gVWm9p0%3D--YW48gZrWQuNyDvOE--ii2bdat7MNipa4o9FsLziA%3D%3D',
         domain: 'www.domestika.org',
     },
 ];
 
 //Credentials needed for the access token to get the final project
-const _credentials_ = 'YOUR_CREDENTIALS_HERE';
+const _credentials_ = 'eyJfcmFpbHMiOnsibWVzc2FnZSI6IkltRm1NbVkzTldSaE9URTJOMkUzT1dJMFpHWmpPR1U1TnpsbU1Ua3daVFUyT1RZeU1qWmtNV1V0WHkxc2IyZHBiaTFmTFdOdmRYSnpaUzF3ZFhKamFHRnpaV1F0ZDJsMGFDMW1jbVZsTFhCc2RYTXRYeTAxTWpjMElnPT0iLCJleHAiOm51bGwsInB1ciI6ImNvb2tpZS5zaWduX2luX3dpdGhfYXBwbGVfc3RhdGUifX0%3D--7e80f9b27c5fcf3562e2ed33e8abd15fa56b0fd3';
 // --- END CONFIGURATION ---
 
 //Check if the N_m3u8DL-RE binary exists, throw error if not
