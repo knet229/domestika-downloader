@@ -4,6 +4,8 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 const fs = require('fs');
 
+TEST
+
 // --- CONFIGURATION ---
 const debug = false;
 const debug_data = [];
@@ -12,19 +14,23 @@ const course_urls = ['https://www.domestika.org/en/courses/5274-developing-creat
 
 const subtitle_lang = 'en';
 //Specifiy your OS either as 'win' for Windows machines or 'mac' for MacOS/Linux machines
-const machine_os = 'mac';
+const machine_os = 'YOUR_OS_HERE';
 
 //Cookie used to retreive video information
 const cookies = [
     {
         name: '_domestika_session',
-        value: 'tU1T%2BpiJp6uXhUWHI5nkUPjHNRis8zZvrQAWXRGsD0Czi%2FztvoN9M0CCwxClfxHV62s21tffvqRbLz38Y38zLQ%2BHKXL75Vis7BE%2FVtCmE6YIuSdhU4RkNj%2BLR13MR3PWNRn6ZRo6DBfL2u9NuS%2F8t2ISX5qYU%2BLSYuLDCSgrPlO5hf60wyahdaab%2B4iF648pNJ2gE85a7opHmtGwZQRdEtHIt%2BGRy5ObTTyJ4qC47ycQQDYoLYnIztaigRDW1Dw%2BSoLfwF7R0Bz8zrff19AphWWsYqYlmeWfyDf3peeZtvjYybVxd%2FQa8COmh%2BIITvMszmY7WBfSwJYDGTA7CuiqZewEX5yYSPJjrVu8lLF%2FNQ0BY0dEFXwd4srQHwgw6XnNvQI4YNa8DGTVaDIrJlg%2F4VVo9pq6pe5uXqIXvOVEnXPljrTAGUp6v9AZ3P%2FEKI4zeeneVjFs091bzkoJEWiP97wXLoIweS9ks%2FbsyES%2FmowLjdMYwNCoFFLOkDDJv5b%2BDqngnupdNp0JRVZlJwy1u9H%2BYJguh%2F4n3Lwu6J6HmCk%2FRvkRu%2BYJmpzUnx6QCCyyZP3kKT78F9HE0OeFZpG5Ri%2F41PQlwpsbTZV9ifePT7otL1C9keT%2BtQnXvWX0gVWm9p0%3D--YW48gZrWQuNyDvOE--ii2bdat7MNipa4o9FsLziA%3D%3D',
+        value: 'bZbF4lG3%2BSA75wPzPzI4hOc6wnV6fGxbK3oAAwVyNIKTZmldxiBAluCqaa9EPwXhrw%2FoP21D3g2KLUlg1YFqSKoKn%2FceJBPIyu4Gmp4gvdllLb8AFKQPKDw2DCItWHBuYpLkaKWLwYuq8PvffU05hOXbEtS8wVEh88rh%2FstFCeKaT1XLSHlIbWHJSjCaF%2BgV%2BcvLHXJDpmlC7jD3%2FBuVe2aNw4HzSWSdxWXE8JLO6KbFak7fTMiEX02ijyTSatPQZV8bsGb%2Bdzc7or9rcbD7LH%2BSPvd6JGzJIUv3nMLiNTNunN5MrtAuCWtSM67zi%2B7XCUP%2BrWj9--PPHYZThmc%2Fsei73d--qWZEa2%2BtK34akuyApFxW8A%3D%3D',
         domain: 'www.domestika.org',
     },
 ];
 
 //Credentials needed for the access token to get the final project
+<<<<<<< HEAD
 const _credentials_ = 'rUjIFgAThuvkPOZRytsVfNM5l2iU3jwwK4hRyTCmerSWfVbWUnoqOvVBokkPt7iDs2HWtX%2FHS8eA9onHEDZSv9ZupTzBAyO0QFnmJn9gloEbGbPCqgshjAkQGxDFdYUveuuuFuGhBgoBniOUAA%2FLIsJiHrV%2FR0SEoWJM%2BNmls9djtpRnizQqXdsPw2X5MJqoCGUEODeMTdthDuN3Uns9Lcv4xXRfXa45RjH4ycFZZah%2BvHWUjVMqZrw4BFZHhNZ2LgDowZvfTjlpprESHLW580%2FkjioxjEnHpwkBBmmisn3d79orRX%2FQYY1SLRnO%2BuYX8NgU4i4a--8dMacy99wxxtE%2FQV--mA4hOjuBoOZGALfechytdQ%3D%3D';
+=======
+const _credentials_ = 'YOUR_CREDENTIALS_HERE';
+>>>>>>> parent of 307be4d (Update index.js)
 // --- END CONFIGURATION ---
 
 //Check if the N_m3u8DL-RE binary exists, throw error if not
