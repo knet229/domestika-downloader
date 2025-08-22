@@ -24,7 +24,7 @@ const cookies = [
 ];
 
 //Credentials needed for the access token to get the final project
-const _credentials_ = 'eyJfcmFpbHMiOnsibWVzc2FnZSI6IkltRm1NbVkzTldSaE9URTJOMkUzT1dJMFpHWmpPR1U1TnpsbU1Ua3daVFUyT1RZeU1qWmtNV1V0WHkxc2IyZHBiaTFmTFdOdmRYSnpaUzF3ZFhKamFHRnpaV1F0ZDJsMGFDMW1jbVZsTFhCc2RYTXRYeTAxTWpjMElnPT0iLCJleHAiOm51bGwsInB1ciI6ImNvb2tpZS5zaWduX2luX3dpdGhfYXBwbGVfc3RhdGUifX0%3D--7e80f9b27c5fcf3562e2ed33e8abd15fa56b0fd3';
+const _credentials_ = 'rUjIFgAThuvkPOZRytsVfNM5l2iU3jwwK4hRyTCmerSWfVbWUnoqOvVBokkPt7iDs2HWtX%2FHS8eA9onHEDZSv9ZupTzBAyO0QFnmJn9gloEbGbPCqgshjAkQGxDFdYUveuuuFuGhBgoBniOUAA%2FLIsJiHrV%2FR0SEoWJM%2BNmls9djtpRnizQqXdsPw2X5MJqoCGUEODeMTdthDuN3Uns9Lcv4xXRfXa45RjH4ycFZZah%2BvHWUjVMqZrw4BFZHhNZ2LgDowZvfTjlpprESHLW580%2FkjioxjEnHpwkBBmmisn3d79orRX%2FQYY1SLRnO%2BuYX8NgU4i4a--8dMacy99wxxtE%2FQV--mA4hOjuBoOZGALfechytdQ%3D%3D';
 // --- END CONFIGURATION ---
 
 //Check if the N_m3u8DL-RE binary exists, throw error if not
